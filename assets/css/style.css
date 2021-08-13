@@ -1,0 +1,65 @@
+:root {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+ 
+main {
+    display: flex;
+}
+
+.hero {
+    background-image: url(../../images/universe-2742113_1920.jpg);
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.hero h2 {
+    position: relative;
+    display: flex;
+    margin: 0 0 0 0;
+    color: white;
+
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar-item {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 25px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-item {
+    display: flex;
+    justify-content: space-between;
+    text-align:right;
+    margin-right: 25px;
+}
+
+
+
