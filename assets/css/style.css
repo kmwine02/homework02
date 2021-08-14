@@ -16,7 +16,7 @@ header {
 }
 
 header h1 {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 body {
@@ -61,6 +61,12 @@ main {
   color: var(--orange);
 }
 
+.nav-bar-item a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 30px;
+}
+
 .section {
   display: flex;
   flex-direction: row;
@@ -70,28 +76,38 @@ main {
 .title {
   margin-right: 50px;
   width: 20%;
+  text-align: center;
+}
+
+.title h3 {
+  font-size: 40px;
 }
 
 .info {
-  border-left:5px solid var(--blue);
+  border-left: 5px solid var(--blue);
   padding-left: 20px;
   flex-wrap: wrap;
   width: 80%;
-}
-
-.about-me {
-  display: flex;
 }
 
 .about-me-info {
   display: flex;
   flex-direction: column;
 }
+.work {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .work-item {
+  display: flex;
   position: relative;
   border: 7px solid var(--orange);
+  height: 150px;
   object-fit: contain;
+  flex: 1 1 45%;
+  flex-wrap: wrap;
+  margin: 1%;
 }
 
 .work-item:hover {
@@ -99,12 +115,27 @@ main {
 }
 
 .work1 {
-    width: 80%;
+  background-image: url(../../images/wave-photography-ocean-sea-56__880.jpeg);
+  background-size: cover;
+  flex: 1 1 90%;
+  height: 230px;
 }
 
 .work2 {
-width: 40%;
-height: auto;
+  background-image: url(../../images/wave-photography-ocean-sea-56__880.jpeg);
+  background-size: cover;
+}
+.work3 {
+  background-image: url(../../images/wave-photography-ocean-sea-56__880.jpeg);
+  background-size: cover;
+}
+.work4 {
+  background-image: url(../../images/wave-photography-ocean-sea-56__880.jpeg);
+  background-size: cover;
+}
+.work5 {
+  background-image: url(../../images/wave-photography-ocean-sea-56__880.jpeg);
+  background-size: cover;
 }
 
 .work-desc {
@@ -112,17 +143,73 @@ height: auto;
   background-color: var(--orange);
   position: absolute;
   bottom: 20%;
-  padding:0 20px;
+  padding: 0 20px;
   text-align: center;
 }
 
-.footer {
+.contact-me-items {
   display: flex;
   flex-direction: row;
 }
 
-.footer-item {
+.contact-me-item {
   display: flex;
   justify-content: space-between;
   margin-right: 25px;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.contact-me-item a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 992px) {
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+
+  header h1 {
+    border-bottom: 5px solid var(--white);
+    padding-left: 0;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+  }
+
+  .hero h2 {
+  align-self: center;
+  }
+
+  .section {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .title {
+    width: 100%;
+    border-bottom: 5px solid var(--blue);
+    margin-bottom: 5px;
+  }
+
+  .info {
+    width: 100%;
+    border-left: 0;
+    padding-left: 0;
+  }
+
+  .contact-me-items {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .work1 {
+    height: 150px;
+  }
 }
