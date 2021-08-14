@@ -6,6 +6,7 @@
   --white: #ffffff;
 }
 
+/* styling header and adding photo*/
 header {
   display: flex;
   justify-content: space-between;
@@ -19,6 +20,12 @@ header h1 {
   padding-left: 10px;
 }
 
+header h1::before {
+    content: url('../../images/self.jpeg');
+    height: 50px;
+    width: 50px;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -30,6 +37,7 @@ main {
   flex-direction: column;
 }
 
+/*adding universe image and portfolio heading styling*/
 .hero {
   background-image: url(../../images/universe.jpg);
   height: 250px;
@@ -48,6 +56,7 @@ main {
   font-size: 40px;
 }
 
+/*styling links in nav bar and displaying in a row*/
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -73,6 +82,7 @@ main {
   padding: 20px;
 }
 
+/* Aligning left side container and adding style */
 .title {
   margin-right: 50px;
   width: 20%;
@@ -83,6 +93,7 @@ main {
   font-size: 40px;
 }
 
+/* Aligning right side container and adding styling */
 .info {
   border-left: 5px solid var(--blue);
   padding-left: 20px;
@@ -94,6 +105,8 @@ main {
   display: flex;
   flex-direction: column;
 }
+
+/* adding work card styling and brighten on hover */
 .work {
   display: flex;
   justify-content: space-evenly;
@@ -115,6 +128,7 @@ main {
   cursor: pointer;
 }
 
+/* adding images to work cards */
 .work1 {
   background-image: url(../../images/wave.jpeg);
   background-size: cover;
@@ -139,6 +153,7 @@ main {
   background-size: cover;
 }
 
+/* adding descriptions to work cards */
 .work-desc {
   border: var(--orange);
   background-color: var(--orange);
@@ -148,6 +163,7 @@ main {
   text-align: center;
 }
 
+/* adding contact itmes and styling */
 .contact-me-items {
   display: flex;
   flex-direction: row;
