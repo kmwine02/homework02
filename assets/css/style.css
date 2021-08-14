@@ -21,7 +21,7 @@ header h1 {
 }
 
 header h1::before {
-    content: url('../../images/self.jpeg');
+    content: url('../images/self.jpeg');
     height: 50px;
     width: 50px;
 }
@@ -39,7 +39,7 @@ main {
 
 /*adding universe image and portfolio heading styling*/
 .hero {
-  background-image: url(../../images/universe.jpg);
+  background-image: url(../images/universe.jpg);
   height: 250px;
   background-position: center;
   background-size: cover;
@@ -130,26 +130,26 @@ main {
 
 /* adding images to work cards */
 .work1 {
-  background-image: url(../../images/wave.jpeg);
+  background-image: url(../images/wave.jpeg);
   background-size: cover;
   flex: 1 1 90%;
   height: 230px;
 }
 
 .work2 {
-  background-image: url(../../images/LED-Wall.png);
+  background-image: url(../images/LED-Wall.png);
   background-size: cover;
 }
 .work3 {
-  background-image: url(../../images/calculator.jpeg);
+  background-image: url(../images/calculator.jpeg);
   background-size: cover;
 }
 .work4 {
-  background-image: url(../../images/pastel-puzzle.jpeg);
+  background-image: url(../images/pastel-puzzle.jpeg);
   background-size: cover;
 }
 .work5 {
-  background-image: url(../../images/running.jpeg);
+  background-image: url(../images/running.jpeg);
   background-size: cover;
 }
 
