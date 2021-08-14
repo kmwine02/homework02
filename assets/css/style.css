@@ -31,7 +31,7 @@ main {
 }
 
 .hero {
-  background-image: url(../../images/universe-2742113_1920.jpg);
+  background-image: url(../../images/universe.jpg);
   height: 250px;
   background-position: center;
   background-size: cover;
@@ -112,29 +112,30 @@ main {
 
 .work-item:hover {
   filter: brightness(150%);
+  cursor: pointer;
 }
 
 .work1 {
-  background-image: url(../../images/wave-photography-ocean-sea-56__880.jpeg);
+  background-image: url(../../images/wave.jpeg);
   background-size: cover;
   flex: 1 1 90%;
   height: 230px;
 }
 
 .work2 {
-  background-image: url(../../images/wave-photography-ocean-sea-56__880.jpeg);
+  background-image: url(../../images/LED-Wall.png);
   background-size: cover;
 }
 .work3 {
-  background-image: url(../../images/wave-photography-ocean-sea-56__880.jpeg);
+  background-image: url(../../images/calculator.jpeg);
   background-size: cover;
 }
 .work4 {
-  background-image: url(../../images/wave-photography-ocean-sea-56__880.jpeg);
+  background-image: url(../../images/pastel-puzzle.jpeg);
   background-size: cover;
 }
 .work5 {
-  background-image: url(../../images/wave-photography-ocean-sea-56__880.jpeg);
+  background-image: url(../../images/running.jpeg);
   background-size: cover;
 }
 
@@ -166,6 +167,11 @@ main {
     color: black;
 }
 
+.contact-me-item > p, .contact-me-item > a {
+    border-bottom: 5px solid var(--blue);
+}
+
+/* updates layout to wrap elements by column and changes border from left to bottom  */
 @media screen and (max-width: 992px) {
   header {
     flex-direction: column;
@@ -206,8 +212,14 @@ main {
     flex-wrap: wrap;
     flex-direction: column;
   }
+
+  .contact-me-item a {
+      align-content: center;
+  }
+
 }
 
+/*updates work cards to all be the same size and stacked*/
 @media screen and (max-width: 768px) {
   .work1 {
     height: 150px;
