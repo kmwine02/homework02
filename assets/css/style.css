@@ -130,26 +130,26 @@ main {
 
 /* adding images to work cards */
 .work1 {
-  background-image: url(../images/wave.jpeg);
+  background-image: url(../images/snipnshow.png);
   background-size: cover;
   flex: 1 1 90%;
   height: 230px;
 }
 
 .work2 {
-  background-image: url(../images/LED-Wall.png);
+  background-image: url(../images/password-generator.png);
   background-size: cover;
 }
 .work3 {
-  background-image: url(../images/calculator.jpeg);
+  background-image: url(../images/javascript-quiz.png);
   background-size: cover;
 }
 .work4 {
-  background-image: url(../images/pastel-puzzle.jpeg);
+  background-image: url(../images/day-planner.png);
   background-size: cover;
 }
 .work5 {
-  background-image: url(../images/running.jpeg);
+  background-image: url(../images/weather-dashboard.png);
   background-size: cover;
 }
 
